@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة سكار للديكور والدهانات | Scar Decoration</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Readex+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0F0F11',
+                        cardBg: '#18181C',
+                        goldPrimary: '#C5A880',
+                        goldHover: '#D4BC98',
+                        textLight: '#F5F5F7'
+                    },
+                    fontFamily: {
+                        customFont: ['Cairo', 'Readex Pro', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', 'Readex Pro', sans-serif;
+            background-color: #0F0F11;
+            color: #F5F5F7;
+            overflow-x: hidden;
+        }
+        .font-black-custom {
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-textLight antialiased selection:bg-goldPrimary selection:text-darkBg">
+
+    <!-- Navbar Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Area -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-600 via-purple-600 to-pink-500 p-0.5 shadow-lg">
+                    <div class="w-full h-full bg-darkBg rounded-[10px] flex items-center justify-center">
+                        <span class="text-goldPrimary font-black text-2xl">S</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-black tracking-wider text-white block leading-none font-black-custom" id="nav-title">شركة سكار للديكور</span>
+                    <span class="text-xs text-goldPrimary tracking-widest block font-bold mt-1" id="nav-subtitle">مركز تلوين بريموكات - أ/ محمد سكار</span>
+                </div>
+            </div>
+
+            <!-- Language Switcher & WhatsApp Button -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleLanguage()" class="bg-cardBg hover:bg-white/10 border border-goldPrimary/40 text-goldPrimary font-bold px-3.5 py-2 rounded-xl transition text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="lang-btn">English</span>
+                </button>
+                <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20الاستفسار%20عن%20المنتجات%20والخدمات" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-goldPrimary hover:bg-goldHover text-darkBg font-black px-5 py-2.5 rounded-xl transition shadow-lg shadow-goldPrimary/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span id="nav-wa">تواصل معنا</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Welcome Header -->
+        <section class="text-center py-10 mb-12">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-goldPrimary/10 border border-goldPrimary/30 text-goldPrimary text-xs sm:text-sm font-bold mb-6">
+                <i class="fa-solid fa-award"></i>
+                <span id="hero-badge">الحاصل على أعلى مسحوبات في مسابقة مراكز تلوين بريموكات</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black tracking-tight mb-4 leading-tight font-black-custom" id="hero-title">
+                معرض منتجات وخامات <span class="text-goldPrimary">شركة سكار للديكور</span>
+            </h1>
+            <p class="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed font-semibold" id="hero-desc">
+                استكشف قسم الدهانات الملونة، المعدات الأصلية، ومقبض الأبواب الفاخرة المتاحة في مقرنا بالأقصر.
+            </p>
+        </section>
+
+        <!-- Gallery Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Card 1: Color Wall Center -->
+            <div class="bg-cardBg rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
+                <div class="relative h-80 bg-black/40 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000&auto=format&fit=crop" alt="مركز تلوين بريموكات" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-goldPrimary/40 px-3 py-1 rounded-lg text-xs font-bold text-goldPrimary">
+                        شاشة ألوان بريموكات
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-black mb-3 text-white font-black-custom" id="card1-title">مركز التلوين الكمبيوتري والدهانات</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-semibold" id="card1-desc">
+                            نوفر أحدث كتالوجات وشاشات خلط الألوان بالكمبيوتر بجميع الدرجات المودرن مع الماكينات المعتمدة لضمان درجة اللون بدقة 100%.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20الاستفسار%20عن%20درجات%20تلوين%20الدهانات" target="_blank" class="w-full bg-goldPrimary hover:bg-goldHover text-darkBg font-black py-3 px-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span id="card1-btn">استفسر عن دهانات الألوان عبر الواتساب</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Award Certificate -->
+            <div class="bg-cardBg rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
+                <div class="relative h-80 bg-black/40 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1000&auto=format&fit=crop" alt="شهادة تقدير سكار" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-goldPrimary/40 px-3 py-1 rounded-lg text-xs font-bold text-goldPrimary">
+                        شهادة التقدير الرسمية
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-black mb-3 text-white font-black-custom" id="card2-title">اعتماد وجودة مركز سكار</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-semibold" id="card2-desc">
+                            شهادة شكر وتقدير رسمية لـ "مركز تلوين سكار للديكورات - أ/ محمد سكار" لتحقيقه أعلى مسحوبات في مسابقة مراكز تلوين بريموكات.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20التعامل%20معكم%20في%20مشروع%20تشطيب" target="_blank" class="w-full bg-goldPrimary hover:bg-goldHover text-darkBg font-black py-3 px-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span id="card2-btn">تواصل معنا للمشاريع الكبيرة</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Paint Buckets Store -->
+            <div class="bg-cardBg rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
+                <div class="relative h-80 bg-black/40 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=1000&auto=format&fit=crop" alt="بستلات دهانات سكار" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-goldPrimary/40 px-3 py-1 rounded-lg text-xs font-bold text-goldPrimary">
+                        منتجات الدهانات الأصلية
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-black mb-3 text-white font-black-custom" id="card3-title">تشكيلة بستلات وخامات الدهانات</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-semibold" id="card3-desc">
+                            توفر جميع أنواع المعجون، الدهانات الداخلية والخارجية، والبطانات الأصلية من بريموكات لحماية حوائطك وتدوم لسنوات.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20الاستفسار%20عن%20أسعار%20بستلات%20الدهانات" target="_blank" class="w-full bg-goldPrimary hover:bg-goldHover text-darkBg font-black py-3 px-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span id="card3-btn">اطلب كميات الدهانات عبر الواتساب</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Handles and Accessories -->
+            <div class="bg-cardBg rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col">
+                <div class="relative h-80 bg-black/40 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop" alt="مقابض وإكسسوارات أبواب" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-goldPrimary/40 px-3 py-1 rounded-lg text-xs font-bold text-goldPrimary">
+                        إكسسوارات ومقابض أبواب
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-black mb-3 text-white font-black-custom" id="card4-title">مقابض وكالونات أبواب فاخرة</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-semibold" id="card4-desc">
+                            تشكيلة واسعة من المقابض الكلاسيك والمودرن، المفصلات، والكالونات الكوبري والنحاسي لإعطاء الأبواب الشكل النهائي الأنيق.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20الاستفسار%20عن%20أشكال%20مقابض%20الأبواب" target="_blank" class="w-full bg-goldPrimary hover:bg-goldHover text-darkBg font-black py-3 px-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span id="card4-btn">استفسر عن المقابض والإكسسوارات</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: Tools & Hardware -->
+            <div class="bg-cardBg rounded-2xl border border-white/10 overflow-hidden shadow-2xl flex flex-col md:col-span-2">
+                <div class="relative h-80 bg-black/40 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop" alt="عد والعدد اليدوية" class="w-full h-full object-cover">
+                    <div class="absolute top-4 right-4 bg-darkBg/80 backdrop-blur-md border border-goldPrimary/40 px-3 py-1 rounded-lg text-xs font-bold text-goldPrimary">
+                        أدوات ومعدات التشطيب
+                    </div>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-black mb-3 text-white font-black-custom" id="card5-title">قسم المعدات والأدوات الاحترافية</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6 font-semibold" id="card5-desc">
+                            جميع المستلزمات الهندسية وأدوات الصنايعية، المفاتيح، الصنفرة، ومعدات النقاشة والكهرباء عالية الجودة لضمان إنهاء العمل بأعلى دقة.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/201006715101?text=مرحباً%20شركة%20سكار،%20أود%20الاستفسار%20عن%20معدات%20وأدوات%20التشطيب" target="_blank" class="w-full bg-goldPrimary hover:bg-goldHover text-darkBg font-black py-3 px-4 rounded-xl transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span id="card5-btn">استفسر عن الأدوات والمعدات عبر الواتساب</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cardBg border-t border-white/10 py-10 text-center text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="font-bold text-white mb-2">شركة سكار للديكور - الأقصر</p>
+            <p class="mb-4">العنوان: مدينة الأقصر، مركز الأقصر، محافظة الأقصر 1351240 | هاتف: 01006715101</p>
+            <p class="text-xs text-gray-500">جميع الحقوق محفوظة © 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bilingual JavaScript Logic -->
+    <script>
+        let currentLang = 'ar';
+
+        const translations = {
+            ar: {
+                navTitle: "شركة سكار للديكور",
+                navSub: "مركز تلوين بريموكات - أ/ محمد سكار",
+                navWa: "تواصل معنا",
+                langBtn: "English",
+                badge: "الحاصل على أعلى مسحوبات في مسابقة مراكز تلوين بريموكات",
+                heroTitle: "معرض منتجات وخامات <span class='text-goldPrimary'>شركة سكار للديكور</span>",
+                heroDesc: "استكشف قسم الدهانات الملونة، المعدات الأصلية، ومقبض الأبواب الفاخرة المتاحة في مقرنا بالأقصر.",
+                c1Title: "مركز التلوين الكمبيوتري والدهانات",
+                c1Desc: "نوفر أحدث كتالوجات وشاشات خلط الألوان بالكمبيوتر بجميع الدرجات المودرن مع الماكينات المعتمدة لضمان درجة اللون بدقة 100%.",
+                c1Btn: "استفسر عن دهانات الألوان عبر الواتساب",
+                c2Title: "اعتماد وجودة مركز سكار",
+                c2Desc: "شهادة شكر وتقدير رسمية لـ 'مركز تلوين سكار للديكورات - أ/ محمد سكار' لتحقيقه أعلى مسحوبات في مسابقة مراكز تلوين بريموكات.",
+                c2Btn: "تواصل معنا للمشاريع الكبيرة",
+                c3Title: "تشكيلة بستلات وخامات الدهانات",
+                c3Desc: "توفر جميع أنواع المعجون، الدهانات الداخلية والخارجية، والبطانات الأصلية من بريموكات لحماية حوائطك وتدوم لسنوات.",
+                c3Btn: "اطلب كميات الدهانات عبر الواتساب",
+                c4Title: "مقابض وكالونات أبواب فاخرة",
+                c4Desc: "تشكيلة واسعة من المقابض الكلاسيك والمودرن، المفصلات، والكالونات الكوبري والنحاسي لإعطاء الأبواب الشكل النهائي الأنيق.",
+                c4Btn: "استفسر عن المقابض والإكسسوارات",
+                c5Title: "قسم المعدات والأدوات الاحترافية",
+                c5Desc: "جميع المستلزمات الهندسية وأدوات الصنايعية، المفاتيح، الصنفرة، ومعدات النقاشة والكهرباء عالية الجودة لضمان إنهاء العمل بأعلى دقة.",
+                c5Btn: "استفسر عن الأدوات والمعدات عبر الواتساب"
+            },
+            en: {
+                navTitle: "Scar Decoration Co.",
+                navSub: "PrimoCoat Color Center - Mr. Mohamed Scar",
+                navWa: "Contact Us",
+                langBtn: "عربي",
+                badge: "Awarded Highest Sales in PrimoCoat Color Centers Contest",
+                heroTitle: "Products & Materials Gallery <span class='text-goldPrimary'>Scar Decoration</span>",
+                heroDesc: "Explore our computerized paint center, original hardware tools, and premium door accessories in Luxor.",
+                c1Title: "Computerized Paint Mixing Center",
+                c1Desc: "Providing the latest modern color mixing catalogs with top-certified machines to guarantee 100% color accuracy.",
+                c1Btn: "Inquire about Paints via WhatsApp",
+                c2Title: "Scar Center Official Certificate",
+                c2Desc: "Official appreciation award for 'Scar Color Center - Mr. Mohamed Scar' for achieving top performance in PrimoCoat contest.",
+                c2Btn: "Contact Us for Large Projects",
+                c3Title: "Paint Buckets & Primers Range",
+                c3Desc: "Full supply of wall putty, interior/exterior paints, and original PrimoCoat primers for maximum durability.",
+                c3Btn: "Order Paint Quantities via WhatsApp",
+                c4Title: "Luxury Door Handles & Locks",
+                c4Desc: "Wide selection of classic and modern handles, hinges, and brass locks to give doors an elegant final look.",
+                c4Btn: "Inquire about Handles & Accessories",
+                c5Title: "Professional Tools & Hardware Section",
+                c5Desc: "High-quality engineering tools, spanners, sanding equipment, and painting gear to ensure perfection in execution.",
+                c5Btn: "Inquire about Tools via WhatsApp"
+            }
+        };
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+            const t = translations[currentLang];
+            document.getElementById('nav-title').innerText = t.navTitle;
+            document.getElementById('nav-subtitle').innerText = t.navSub;
+            document.getElementById('nav-wa').innerText = t.navWa;
+            document.getElementById('lang-btn').innerText = t.langBtn;
+            document.getElementById('hero-badge').innerText = t.badge;
+            document.getElementById('hero-title').innerHTML = t.heroTitle;
+            document.getElementById('hero-desc').innerText = t.heroDesc;
+
+            document.getElementById('card1-title').innerText = t.c1Title;
+            document.getElementById('card1-desc').innerText = t.c1Desc;
+            document.getElementById('card1-btn').innerText = t.c1Btn;
+
+            document.getElementById('card2-title').innerText = t.c2Title;
+            document.getElementById('card2-desc').innerText = t.c2Desc;
+            document.getElementById('card2-btn').innerText = t.c2Btn;
+
+            document.getElementById('card3-title').innerText = t.c3Title;
+            document.getElementById('card3-desc').innerText = t.c3Desc;
+            document.getElementById('card3-btn').innerText = t.c3Btn;
+
+            document.getElementById('card4-title').innerText = t.c4Title;
+            document.getElementById('card4-desc').innerText = t.c4Desc;
+            document.getElementById('card4-btn').innerText = t.c4Btn;
+
+            document.getElementById('card5-title').innerText = t.c5Title;
+            document.getElementById('card5-desc').innerText = t.c5Desc;
+            document.getElementById('card5-btn').innerText = t.c5Btn;
+        }
+    </script>
+</body>
+</html>
